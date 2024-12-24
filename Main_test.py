@@ -57,6 +57,7 @@
 # b = s[0]
 # sum_str = 0
 # str_new = []
+# 
 # for i in s:
 #     if i == b:
 #         sum_str += 1
@@ -67,6 +68,7 @@
 #         sum_str = 1
 # str_new.append(b)
 # str_new.append(str(sum_str))
+# 
 # print(''.join(str_new))
 #
 
@@ -85,6 +87,7 @@
 
 # s = input().lower().split()
 # words = {}
+# 
 # for word in s:
 #     if word in words:
 #         words[word] += 1
@@ -99,28 +102,28 @@
 умножение на число справа (mul) и слева (rmul)
 отрицание (унарный минус neg)
 '''
-class Vector:
-    def __init__(self, x: int, y: int):
-        self.x = x
-        self.y = y
+# class Vector:
+#     def __init__(self, x: int, y: int):
+#         self.x = x
+#         self.y = y
 
-    def __str__(self):
-        return f"({self.x}, {self.y})"
+#     def __str__(self):
+#         return f"({self.x}, {self.y})"
 
-    def __add__(self, other):
-        return Vector(self.x + other.x, self.y + other.y)
+#     def __add__(self, other):
+#         return Vector(self.x + other.x, self.y + other.y)
 
-    def __sub__(self, other):
-        return Vector(self.x - other.x, self.y - other.y)
+#     def __sub__(self, other):
+#         return Vector(self.x - other.x, self.y - other.y)
 
-    def __mul__(self, other):
-        return Vector(self.x * other, self.y * other)
+#     def __mul__(self, other):
+#         return Vector(self.x * other, self.y * other)
 
-    def __rmul__(self, other):
-        return self.__mul__(other)
+#     def __rmul__(self, other):
+#         return self.__mul__(other)
 
-    def __neg__(self):
-        return Vector(self.x *-1, self.y *-1)
+#     def __neg__(self):
+#         return Vector(self.x *-1, self.y *-1)
 
 
 
